@@ -1,0 +1,25 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+<body>
+    <div id="loading" style="margin: 0 auto; text-align: center;">
+        <img style="width: 20%; margin-top: 50%;" src="./assets/preloading.png"></img>
+    </div>
+    <script src="../../lib/Preloader17-0.6.67.min.js"></script>
+    <script>
+        olympus17.preload([
+            {url: "../../lib/polyfill.min.js", mode: 2},
+            {url: "../../lib/egret/5.0.8/egret.min.js", mode: 2},
+            {url: "../../lib/egret/5.0.8/egret.web.min.js", mode: 2},
+            {url: "../../lib/egret/5.0.8/eui.min.js", mode: 2},
+            {url: "../../lib/egret/5.0.8/res.min.js", mode: 2},
+            {url: "../../lib/egret/5.0.8/tween.min.js", mode: 2},
+            {url: "../../lib/egret/5.0.8/game.min.js", mode: 2},
+            "./index.js"
+        ], null, true, "$a-{compileVersion}");
+    </script>
+    <div id="rootEgret"></div>
+    <div id="rootDOM"></div>
+</body>
+</html>

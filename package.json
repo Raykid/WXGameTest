@@ -1,0 +1,33 @@
+{
+  "devDependencies": {
+    "del": "^3.0.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-pngmin": "^0.2.1",
+    "gulp-replace": "^0.6.1",
+    "ts-loader": "^4.5.0",
+    "typescript": "^2.8.3",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^2.0.15",
+    "webpack-dev-server": "^3.1.5",
+    "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {
+    "olympus-r": "^0.6.119",
+    "olympus-r-17plugins": "^0.6.77",
+    "olympus-r-dom": "^0.6.21",
+    "olympus-r-egret": "^0.7.5"
+  },
+  "name": "wxgametest",
+  "version": "1.0.0",
+  "description": "WXGameTest项目",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node_modules/.bin/webpack-dev-server --inline --host 0.0.0.0 --progress --config build/dev-server.js",
+    "build": "node build/build.js --env-dev",
+    "pngmin": "node build/pngmin.js --path"
+  },
+  "author": "",
+  "license": "ISC"
+}
